@@ -9,7 +9,7 @@ function normalizeBasePath(value) {
 }
 
 const envBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
-const basePath = envBasePath === undefined ? "/tools/audio-clipper" : normalizeBasePath(envBasePath);
+const basePath = normalizeBasePath(envBasePath);
 
 const nextConfig = {
   reactStrictMode: true,
